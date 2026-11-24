@@ -1,0 +1,134 @@
+site_name: LLM Deep Dive
+site_description: From first principles to frontier LLMs — the math, the proofs, the code, and how to apply it.
+site_url: https://kdellis135.github.io/llm_deep_dive/
+repo_url: https://github.com/kdellis135/llm_deep_dive
+repo_name: kdellis135/llm_deep_dive
+edit_uri: edit/main/docs/
+copyright: Built for deep understanding. Content licensed CC BY 4.0; code MIT.
+
+theme:
+  name: material
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  icon:
+    logo: material/brain
+    repo: fontawesome/brands/github
+  features:
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+
+plugins:
+  - search
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js
+  - javascripts/widgets.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Start Here:
+      - Setup & How to Study: start/setup.md
+      - Notation & Conventions: start/notation.md
+  - "Part I · Math Foundations":
+      - 1. Linear Algebra: math/linear-algebra.md
+      - 2. Calculus & Matrix Calculus: math/calculus.md
+      - 3. Probability & Statistics: math/probability.md
+      - 4. Information Theory: math/information-theory.md
+      - 5. Optimization: math/optimization.md
+  - "Part II · Neural Networks":
+      - 6. Neurons & MLPs: nn/mlp.md
+      - 7. Backpropagation & Autograd: nn/backprop.md
+      - 8. Training Deep Networks: nn/training.md
+      - 9. Language Modeling Basics: nn/language-modeling.md
+  - "Part III · The Transformer":
+      - 10. Tokenization: transformer/tokenization.md
+      - 11. Embeddings & Positions: transformer/positions.md
+      - 12. Attention: transformer/attention.md
+      - 13. The Transformer Block: transformer/block.md
+      - 14. GPT from Scratch: transformer/gpt.md
+  - "Part IV · Training at Scale":
+      - 15. Pretraining: scale/pretraining.md
+      - 16. Distributed Training & Precision: scale/distributed.md
+      - 17. Scaling Laws: scale/scaling-laws.md
+  - "Part V · Inference":
+      - 18. Decoding & Sampling: inference/decoding.md
+      - 19. Efficient Inference: inference/efficient.md
+  - "Part VI · Frontier Models":
+      - 20. Modern Architectures: frontier/architectures.md
+      - 21. Post-Training & Alignment: frontier/post-training.md
+      - 22. Reasoning Models: frontier/reasoning.md
+      - 23. Fine-Tuning in Practice: frontier/fine-tuning.md
+      - 24. Interpretability: frontier/interpretability.md
+  - "Part VII · Applying LLMs":
+      - 25. Prompt & Context Engineering: applied/prompting.md
+      - 26. Embeddings & RAG: applied/rag.md
+      - 27. Tool Use & Agents: applied/agents.md
+      - 28. Building with Claude: applied/claude-api.md
+      - 29. Evaluation & Production: applied/production.md
+  - Appendix:
+      - Formula Sheet: appendix/formulas.md
+      - Glossary: appendix/glossary.md
+      - Resources: appendix/resources.md
