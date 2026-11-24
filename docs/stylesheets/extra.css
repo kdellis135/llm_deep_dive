@@ -1,12 +1,33 @@
 /* ---------- Layout & typography ---------- */
 .md-grid { max-width: 1340px; }
-.md-typeset { font-size: 0.84rem; line-height: 1.7; }
+.md-typeset { font-size: 0.86rem; line-height: 1.8; }
 .md-typeset h1 { font-weight: 700; letter-spacing: -0.01em; }
-.md-typeset h2 { font-weight: 650; border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: .2em; }
-.md-typeset table:not([class]) { font-size: 0.78rem; }
+.md-typeset h2 { font-weight: 650; border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: .25em; margin-top: 2.6em; }
+.md-typeset h3 { font-weight: 650; margin-top: 2em; }
+.md-typeset h4 { margin-top: 1.6em; }
+
+/* Breathing room: paragraphs, lists and blocks never run into each other */
+.md-typeset p { margin: 0 0 1.05em; }
+.md-typeset ul li, .md-typeset ol li { margin-bottom: .45em; }
+.md-typeset li > p { margin-bottom: .5em; }
+.md-typeset .admonition, .md-typeset details { margin: 1.6em 0; }
+.md-typeset .admonition > p, .md-typeset details > p { margin-top: .8em; }
+.md-typeset hr { margin: 2.4em 0; }
+
+/* Tables: roomier cells so formulas don't collide */
+.md-typeset table:not([class]) { font-size: 0.8rem; }
+.md-typeset table:not([class]) th, .md-typeset table:not([class]) td { padding: .75em 1.1em; vertical-align: middle; }
+
+/* Display math */
 .md-typeset .arithmatex { overflow-x: auto; overflow-y: hidden; }
-.md-typeset div.arithmatex { padding: .2em 0; }
-mjx-container[display="true"] { margin: .9em 0 !important; }
+.md-typeset div.arithmatex { padding: .35em 0; }
+mjx-container[display="true"] { margin: 1.1em 0 !important; }
+
+/* Proof steps: a bold lead-in ("Step 1 · Expand.") is highlighted */
+.md-typeset .proof p > strong:first-child,
+.md-typeset .example p > strong:first-child { color: var(--md-primary-fg-color); }
+[data-md-color-scheme="slate"] .md-typeset .proof p > strong:first-child,
+[data-md-color-scheme="slate"] .md-typeset .example p > strong:first-child { color: var(--md-primary-fg-color--light); }
 
 /* ---------- Custom admonitions (consistent across all chapters) ---------- */
 :root {
@@ -45,6 +66,12 @@ mjx-container[display="true"] { margin: .9em 0 !important; }
 .md-typeset .admonition.intuition, .md-typeset details.intuition { border-color: #f9a825; }
 .md-typeset .intuition > .admonition-title, .md-typeset .intuition > summary { background-color: rgba(249,168,37,.12); }
 .md-typeset .intuition > .admonition-title::before, .md-typeset .intuition > summary::before { background-color: #f9a825; -webkit-mask-image: var(--icon-intuition); mask-image: var(--icon-intuition); }
+
+/* "recall": a short refresher of background math the next step depends on */
+:root { --icon-recall: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>'); }
+.md-typeset .admonition.recall, .md-typeset details.recall { border-color: #1565c0; }
+.md-typeset .recall > .admonition-title, .md-typeset .recall > summary { background-color: rgba(21,101,192,.1); }
+.md-typeset .recall > .admonition-title::before, .md-typeset .recall > summary::before { background-color: #1565c0; -webkit-mask-image: var(--icon-recall); mask-image: var(--icon-recall); }
 
 /* ---------- Video embeds ---------- */
 .video { position: relative; width: 100%; max-width: 820px; aspect-ratio: 16 / 9; margin: 1em 0; }
