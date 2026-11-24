@@ -4,7 +4,7 @@ site_url: https://kdellis135.github.io/llm_deep_dive/
 repo_url: https://github.com/kdellis135/llm_deep_dive
 repo_name: kdellis135/llm_deep_dive
 edit_uri: edit/main/docs/
-copyright: Built for deep understanding. Content licensed CC BY 4.0; code MIT.
+copyright: 'Built for deep understanding. Content licensed <a href="https://github.com/kdellis135/llm_deep_dive/blob/main/LICENSE-CONTENT">CC BY 4.0</a>; code <a href="https://github.com/kdellis135/llm_deep_dive/blob/main/LICENSE">MIT</a>.'
 
 theme:
   name: material

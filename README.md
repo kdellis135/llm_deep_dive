@@ -37,4 +37,5 @@ The site is built with [MkDocs Material](https://squidfunk.github.io/mkdocs-mate
 
 ## License
 
-Text content: CC BY 4.0. Code: MIT.
+- **Text content** (`docs/**/*.md`): [Creative Commons Attribution 4.0 International](LICENSE-CONTENT) (CC BY 4.0).
+- **Code** (`code/`, the site's JavaScript/CSS and build config): [MIT](LICENSE).
