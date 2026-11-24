@@ -19,8 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-This MIT license applies to the source code in this repository (the `code/`
-directory, `docs/javascripts/`, `docs/stylesheets/`, and build configuration).
-The written content of the site (`docs/**/*.md`) is licensed separately under
-Creative Commons Attribution 4.0 International; see LICENSE-CONTENT.
