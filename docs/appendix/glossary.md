@@ -3,6 +3,8 @@
 !!! abstract "How to use this page"
     One definition per term, used consistently across the site. The chapter in brackets is where the term is introduced or explained in depth. Notation is on the [Notation](../start/notation.md) page.
 
+## A
+
 **Activation** — the output of a neuron or layer after its nonlinearity; more loosely, any intermediate tensor of the forward pass, which must be stored for the backward pass. [6, 7]
 
 **Activation checkpointing** — storing only some activations and recomputing the rest during backward, trading ~33% more compute for less memory. [7.7]
@@ -27,6 +29,8 @@
 
 **Autoregressive** — generating one token at a time, each conditioned on all previous ones. [9.1]
 
+## B
+
 **Backpropagation** — reverse-mode automatic differentiation applied to a neural network. [7]
 
 **Base model** — a pretrained model before post-training; it continues documents rather than following instructions. [15.7]
@@ -42,6 +46,8 @@
 **BPE (byte-pair encoding)** — tokenizer training by repeatedly merging the most frequent adjacent pair of symbols. [10.3]
 
 **Bradley–Terry model** — $\Pr(i\succ j) = \sigma(r_i-r_j)$; the model behind reward models and arena rankings. [21.3, 29.5]
+
+## C
 
 **Causal mask** — setting attention scores to $-\infty$ for future positions so position $t$ sees only $x_{\le t}$. [12.4]
 
@@ -67,6 +73,8 @@
 
 **Cross-entropy** — $H(p,q) = -\E_p\log q$; the LLM training loss with $p$ the data and $q$ the model. [4.4]
 
+## D
+
 **Data parallelism (DDP)** — replicating the model on each GPU and averaging gradients. [16.5]
 
 **Decode** — the generation phase, producing one token per step per sequence; memory-bandwidth-bound. [19.1]
@@ -74,6 +82,8 @@
 **Distillation** — training a smaller student model to imitate a larger teacher. [23.9]
 
 **DPO (direct preference optimization)** — a supervised loss on preference pairs that solves the KL-regularized RLHF objective without RL. [21.7]
+
+## E
 
 **Effort** — an API control over how much a model reasons and how many tokens it spends. [28.5]
 
@@ -85,6 +95,8 @@
 
 **Evaluation (eval)** — a test set plus grader used to measure a model or application. [29]
 
+## F
+
 **Fine-tuning** — any further training of a pretrained model (SFT, LoRA, DPO, RL are kinds of fine-tuning). [23]
 
 **FlashAttention** — exact attention computed tile by tile in on-chip memory with an online softmax, never materializing the $T\times T$ matrix. [19.3]
@@ -94,6 +106,8 @@
 **FSDP / ZeRO** — sharding parameters, gradients and optimizer states across data-parallel GPUs. [16.6]
 
 **Function calling / tool use** — the model emitting structured calls that application code executes. [27.1]
+
+## G
 
 **GELU** — $z\Phi(z)$, the activation in GPT-2 and BERT. [6.3]
 
@@ -109,9 +123,13 @@
 
 **GRPO** — PPO-style RL with group-normalized rewards as advantages and no value model. [22.4]
 
+## H
+
 **Hallucination** — fluent output that is false or unsupported by the provided sources.
 
 **Hidden state** — the vector at a position in an intermediate layer; in a Transformer, the residual stream. [13.5]
+
+## I
 
 **Induction head** — an attention head that completes patterns "…A B … A → B" by copying. [12.7]
 
@@ -119,9 +137,13 @@
 
 **In-context learning** — learning a task from examples in the prompt, without weight updates. [12.7, 25.1]
 
+## K
+
 **KL divergence** — $\KL(p\Vert q) = \E_p\log\frac pq\ge0$; extra cost of using $q$ when the truth is $p$. [4.5]
 
 **KV cache** — stored keys and values of previous tokens, reused at every decode step. [19.2]
+
+## L
 
 **LayerNorm** — normalizing each vector to zero mean and unit variance over its features, with learned gain and bias. [8.3]
 
@@ -137,6 +159,8 @@
 
 **Loss** — the scalar objective being minimized, here mostly next-token cross-entropy. [4.6]
 
+## M
+
 **MCP (Model Context Protocol)** — an open protocol for exposing tools, resources and prompts to LLM applications. [27.5]
 
 **MFU (model FLOPs utilization)** — useful model FLOPs per second divided by the hardware's peak. [15.5]
@@ -151,9 +175,15 @@
 
 **MoE (mixture of experts)** — a layer of many expert FFNs, of which a router selects a few per token. [20.2]
 
+## N
+
 **Nucleus (top-p) sampling** — sampling from the smallest set of tokens with total probability ≥ $p$. [18.4]
 
+## O
+
 **Online softmax** — computing a softmax-weighted sum in blocks with a running max and rescaled running sum. [19.3]
+
+## P
 
 **Perplexity** — $e^{\text{loss}}$; the effective number of equally likely choices per token. [4.7]
 
@@ -175,7 +205,11 @@
 
 **Prompt injection** — instructions embedded in untrusted content that try to hijack the model. [25.5]
 
+## Q
+
 **Quantization** — storing weights (or activations, KV) in fewer bits. [19.5]
+
+## R
 
 **RAG (retrieval-augmented generation)** — retrieving relevant documents at query time and answering from them. [26]
 
@@ -196,6 +230,8 @@
 **RMSNorm** — normalization by the root mean square only, without centering or bias. [8.3]
 
 **RoPE** — rotary position embedding: rotating query and key pairs by position-dependent angles. [11.5]
+
+## S
 
 **Scaling laws** — empirical power laws relating loss to parameters, data and compute. [17]
 
@@ -219,6 +255,8 @@
 
 **System prompt** — the operator's standing instructions at the start of a conversation. [25.1]
 
+## T
+
 **Teacher forcing** — training on the true prefix at every position rather than on the model's own outputs. [9.9]
 
 **Temperature** — dividing logits by $T$ before softmax: lower is sharper, higher is flatter. [18.3]
@@ -235,7 +273,11 @@
 
 **Transformer** — the architecture of stacked attention and FFN blocks with residual connections and normalization. [13]
 
+## V
+
 **Vocabulary** — the set of tokens $\mathcal{V}$, of size $V$. [10.8]
+
+## W
 
 **Weight decay** — shrinking weights toward zero each step; a regularizer. [5.6, 8.5]
 

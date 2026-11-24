@@ -366,7 +366,7 @@ $X = 1$ ("success") with probability $\pi$, else $X = 0$. The formula $\pi^x(1-\
 - Mean: $0\cdot(1-\pi) + 1\cdot\pi = \pi$.
 - Example: "is this eval answer correct?" with $\pi = 0.8$.
 
-### Categorical: one roll of a $V$-sided, possibly unfair die
+### Categorical: one roll of a $V$-sided, possibly unfair die { data-toc-label="Categorical: one roll of a V-sided, possibly unfair die" }
 
 $X$ takes one of $V$ values, value $k$ with probability $\pi_k$.
 

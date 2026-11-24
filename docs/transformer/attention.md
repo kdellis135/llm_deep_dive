@@ -57,7 +57,7 @@ The test suite checks this function against PyTorch's fused `F.scaled_dot_produc
 !!! intuition "Attention is a kernel smoother"
     $\mathbf{y}_t = \sum_s\frac{\kappa(\mathbf{q}_t,\mathbf{k}_s)}{\sum_{s'}\kappa(\mathbf{q}_t,\mathbf{k}_{s'})}\mathbf{v}_s$ with the kernel $\kappa(\mathbf{q},\mathbf{k}) = \exp(\mathbf{q}^\top\mathbf{k}/\sqrt{d_h})$. That's the Nadaraya–Watson estimator from 1960s statistics: predict at a query point by averaging the values at nearby keys, weighted by a similarity kernel. The difference is that a Transformer **learns** the space ($\mathbf{W}_Q,\mathbf{W}_K$) in which similarity is measured ([Tsai et al., 2019](https://arxiv.org/abs/1908.11775)).
 
-## 12.3 Why divide by $\sqrt{d_h}$?
+## 12.3 Why divide by $\sqrt{d_h}$? { data-toc-label="12.3 Why divide by √dₕ?" }
 
 !!! theorem "Proposition 12.1 (Dot products grow like $\sqrt{d_h}$)"
     If $\mathbf{q},\mathbf{k}\in\R^{d_h}$ have independent entries with mean 0 and variance 1, then $\E[\mathbf{q}^\top\mathbf{k}] = 0$ and $\Var(\mathbf{q}^\top\mathbf{k}) = d_h$. Hence $\Var(\mathbf{q}^\top\mathbf{k}/\sqrt{d_h}) = 1$ for every $d_h$.
@@ -69,7 +69,7 @@ Why do large scores hurt? With unit-variance scores, the softmax is reasonably s
 
 <div class="widget" data-widget="attention-scaling"></div>
 
-## 12.4 Causal masking: $T$ predictions from one pass
+## 12.4 Causal masking: $T$ predictions from one pass { data-toc-label="12.4 Causal masking: T predictions from one pass" }
 
 A language model predicts $x_{t+1}$ from $x_{\le t}$. If position $t$ could attend to position $t+1$, it could just copy the answer. The **causal mask** sets $s_{ts} = -\infty$ for $s>t$, so $e^{-\infty} = 0$ and those weights vanish exactly.
 

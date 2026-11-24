@@ -265,7 +265,7 @@ It is the standard similarity measure for text embeddings (Ch. 26), because it i
 
     Doubling $\mathbf{y}$ to $(2,2)$ doubles the dot product but leaves the cosine at $0.707$.
 
-### Why the cosine always lands in $[-1, 1]$
+### Why the cosine always lands in $[-1, 1]$ { data-toc-label="Why the cosine always lands in [−1, 1]" }
 
 There is a gap in the story above. In $\R^{768}$ we cannot draw triangles, so "the angle" has no picture. Instead we **define** the angle by $\cos\theta = \mathbf{x}^\top\mathbf{y}/(\lVert\mathbf{x}\rVert\lVert\mathbf{y}\rVert)$.
 
@@ -876,7 +876,7 @@ Three properties, each with a one-line check:
 
     So $\mathbf{A}$ stretches the diagonal direction by 3 and leaves the anti-diagonal alone.
 
-### Finding eigenvalues: $\det(\mathbf{A}-\lambda\mathbf{I}) = 0$
+### Finding eigenvalues: $\det(\mathbf{A}-\lambda\mathbf{I}) = 0$ { data-toc-label="Finding eigenvalues: det(A − λI) = 0" }
 
 Guessing doesn't scale. Here is the systematic method, step by step.
 

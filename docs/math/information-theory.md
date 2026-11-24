@@ -76,7 +76,7 @@ This site uses nats unless stated otherwise, because PyTorch's `cross_entropy` u
 
 ---
 
-## 4.1 Information content: why $-\log p$?
+## 4.1 Information content: why $-\log p$? { data-toc-label="4.1 Information content: why −log p?" }
 
 **The idea:** rare events are surprising. Surprise should add up for independent events. Only one function does both: $-\log p$.
 

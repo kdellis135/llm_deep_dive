@@ -1,5 +1,5 @@
 /* ---------- Layout & typography ---------- */
-.md-grid { max-width: 1340px; }
+.md-grid { max-width: 1240px; }
 .md-typeset { font-size: 0.86rem; line-height: 1.8; }
 .md-typeset h1 { font-weight: 700; letter-spacing: -0.01em; }
 .md-typeset h2 { font-weight: 650; border-bottom: 1px solid var(--md-default-fg-color--lightest); padding-bottom: .25em; margin-top: 2.6em; }
@@ -95,3 +95,15 @@ mjx-container[display="true"] { margin: 1.1em 0 !important; }
 /* ---------- Misc ---------- */
 .md-typeset .grid.cards > ul > li { border-radius: 8px; }
 .part-badge { display: inline-block; font-size: .7rem; padding: 1px 8px; border-radius: 10px; background: var(--md-accent-fg-color--transparent); color: var(--md-accent-fg-color); font-weight: 600; }
+
+/* ---------- Left sidebar: page sections (toc.integrate) ---------- */
+/* The current page's sections are nested under its entry in the left menu.
+   Widen the sidebar a little so long section titles wrap less. */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary { width: 14.5rem; }
+}
+/* Section links: slightly smaller than chapter links; sub-sections smaller still */
+.md-nav--primary .md-nav--secondary .md-nav__link { font-size: .95em; }
+.md-nav--primary .md-nav--secondary .md-nav .md-nav__link { font-size: .9em; color: var(--md-default-fg-color--light); }
+/* Guide line on the left of the section list */
+.md-nav--primary .md-nav--secondary > .md-nav__list { border-left: 2px solid var(--md-default-fg-color--lightest); margin-left: .6rem; }
