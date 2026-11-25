@@ -1,3 +1,8 @@
+---
+seo_title: "Self-Attention Explained: Derivations, Proofs & Code"
+description: "Scaled dot-product attention with exact shapes, why scores are divided by sqrt(d), causal masking, the attention backward pass, multi-head attention, and induction heads."
+---
+
 # 12. Attention
 
 !!! abstract "In this chapter"

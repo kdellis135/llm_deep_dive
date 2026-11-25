@@ -1,3 +1,8 @@
+---
+seo_title: "LLM Formula Sheet: Every Key Equation"
+description: "Every key formula for large language models on one page, from softmax gradients and attention to Chinchilla, DPO and GRPO, each linked to its step-by-step derivation."
+---
+
 # Formula Sheet
 
 !!! abstract "How to use this page"

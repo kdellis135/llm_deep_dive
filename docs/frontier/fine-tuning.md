@@ -1,3 +1,8 @@
+---
+seo_title: "Fine-Tuning LLMs in Practice: LoRA and QLoRA"
+description: "When to fine-tune vs prompt or retrieve, the memory cost of full fine-tuning, LoRA math with a tested implementation, QLoRA and NF4, data preparation, hyperparameters and distillation."
+---
+
 # 23. Fine-Tuning in Practice
 
 !!! abstract "In this chapter"

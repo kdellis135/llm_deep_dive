@@ -1,3 +1,8 @@
+---
+seo_title: "Tokenization & BPE: How LLMs Read Text"
+description: "Why LLMs use subword tokens: Unicode and UTF-8, byte-pair encoding (BPE) with a complete implementation, GPT-4's pre-tokenization regex, chat templates, WordPiece and SentencePiece."
+---
+
 # 10. Tokenization
 
 !!! abstract "In this chapter"

@@ -1,3 +1,8 @@
+---
+seo_title: "Building with Claude: The Claude API in Practice"
+description: "The Claude Messages API from first request to production: model choice, streaming, thinking and effort, tool use, structured outputs, prompt caching, citations, batches and cost."
+---
+
 # 28. Building with Claude
 
 !!! abstract "In this chapter"

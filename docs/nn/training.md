@@ -1,3 +1,8 @@
+---
+seo_title: "Training Deep Networks: Initialization, Norms, Residuals"
+description: "Why gradients vanish or explode, Xavier and Kaiming initialization derived, BatchNorm vs LayerNorm vs RMSNorm, residual connections, pre-norm vs post-norm, dropout and weight decay."
+---
+
 # 8. Training Deep Networks
 
 !!! abstract "In this chapter"

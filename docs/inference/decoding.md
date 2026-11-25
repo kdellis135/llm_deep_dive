@@ -1,3 +1,8 @@
+---
+seo_title: "LLM Decoding & Sampling: Temperature, Top-k, Top-p"
+description: "Greedy and beam search, why the most likely text is bad text, temperature, top-k, top-p and min-p sampling with code, repetition penalties, constrained decoding for JSON, and best-of-n."
+---
+
 # 18. Decoding & Sampling
 
 !!! abstract "In this chapter"

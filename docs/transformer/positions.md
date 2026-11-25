@@ -1,3 +1,8 @@
+---
+seo_title: "Embeddings & Positional Encoding: RoPE, ALiBi"
+description: "Token embeddings and weight tying, why attention needs positions, sinusoidal and learned encodings, ALiBi, rotary position embedding (RoPE) derived with proof, and context extension."
+---
+
 # 11. Embeddings & Positions
 
 !!! abstract "In this chapter"

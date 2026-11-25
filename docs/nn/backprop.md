@@ -1,3 +1,8 @@
+---
+seo_title: "Backpropagation & Autograd, Derived and Coded"
+description: "Backpropagation from first principles: computation graphs, reverse-mode autodiff, a micrograd autograd engine line by line, matrix backprop with proof, and how PyTorch autograd works."
+---
+
 # 7. Backpropagation & Autograd
 
 !!! abstract "In this chapter"

@@ -1,3 +1,8 @@
+---
+seo_title: "Optimization: Gradient Descent, SGD, Adam & AdamW"
+description: "Gradient descent with convergence proofs, ill-conditioning, SGD and batch size, momentum, Adam derived from scratch, AdamW, learning-rate schedules, gradient clipping and Muon."
+---
+
 # 5. Optimization
 
 !!! abstract "In this chapter"

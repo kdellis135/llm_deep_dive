@@ -1,3 +1,8 @@
+---
+seo_title: "Calculus & Matrix Calculus for Deep Learning"
+description: "Derivatives, the chain rule with proof, gradients, Jacobians and vector-Jacobian products, and every matrix-calculus identity a Transformer needs, including softmax and cross-entropy."
+---
+
 # 2. Calculus & Matrix Calculus
 
 !!! abstract "In this chapter"

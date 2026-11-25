@@ -1,3 +1,8 @@
+---
+seo_title: "LLM Interpretability: Probes, Sparse Autoencoders, Circuits"
+description: "Linear probes, superposition, sparse autoencoders with a working implementation, circuits and activation patching, attribution graphs inside Claude, and steering vectors."
+---
+
 # 24. Interpretability
 
 !!! abstract "In this chapter"

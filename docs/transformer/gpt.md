@@ -1,3 +1,8 @@
+---
+seo_title: "Build GPT-2 from Scratch in PyTorch"
+description: "A complete ~200-line GPT-2 implementation with the shape of every tensor, initialization, sanity checks, a training loop with AdamW, loading OpenAI's weights, and reproducing GPT-2 124M."
+---
+
 # 14. GPT from Scratch
 
 !!! abstract "In this chapter"

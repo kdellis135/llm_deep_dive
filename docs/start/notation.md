@@ -1,3 +1,8 @@
+---
+seo_title: "Notation for Machine Learning & Transformers"
+description: "One consistent set of symbols for linear algebra, calculus, probability, learning, Transformers, scaling and RL, plus the terminology used throughout LLM Deep Dive."
+---
+
 # Notation & Conventions
 
 !!! abstract "In this page"

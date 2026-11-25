@@ -1,3 +1,8 @@
+---
+seo_title: "LLM Tool Use & Agents: Function Calling, ReAct, MCP"
+description: "How function calling works, the agent loop and ReAct, workflows vs agents, tool design, the Model Context Protocol (MCP), multi-step reliability, memory and multi-agent systems."
+---
+
 # 27. Tool Use & Agents
 
 !!! abstract "In this chapter"

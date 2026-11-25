@@ -1,3 +1,8 @@
+---
+seo_title: "Modern LLM Architectures: Llama, Mixture-of-Experts, MLA"
+description: "Every change from GPT-2 to Llama 3 and why, a Llama-style model in code, real open-model configs, mixture-of-experts routing and load balancing, and DeepSeek's multi-head latent attention."
+---
+
 # 20. Modern Architectures
 
 !!! abstract "In this chapter"

@@ -1,3 +1,8 @@
+---
+seo_title: "Best Resources to Learn LLMs: Videos, Books, Code"
+description: "The best videos, books, courses, papers and code for learning large language models, including Karpathy and 3Blue1Brown, with what each resource is best for."
+---
+
 # Resources
 
 !!! abstract "How to use this page"

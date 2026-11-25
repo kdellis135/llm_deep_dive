@@ -1,3 +1,8 @@
+---
+seo_title: "Probability & Statistics for Machine Learning"
+description: "Probability for LLMs from coin flips up: the chain rule of probability, Bayes' theorem, expectation and variance, the CLT, maximum likelihood, MAP, and sampling from a softmax."
+---
+
 # 3. Probability & Statistics
 
 !!! abstract "In this chapter"

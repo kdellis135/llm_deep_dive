@@ -1,3 +1,8 @@
+---
+seo_title: "Embeddings & RAG: Retrieval-Augmented Generation"
+description: "How RAG works: contrastive embedding training, BM25, dense retrieval with HNSW and IVF, hybrid search with reciprocal rank fusion, reranking, chunking, and evaluating retrieval."
+---
+
 # 26. Embeddings & RAG
 
 !!! abstract "In this chapter"

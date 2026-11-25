@@ -1,3 +1,8 @@
+---
+seo_title: "Post-Training & Alignment: SFT, RLHF, PPO and DPO"
+description: "From base model to assistant: SFT with loss masking, Bradley-Terry reward models, the KL-regularized RL objective, REINFORCE, PPO and GAE, DPO derived from RLHF, and Constitutional AI."
+---
+
 # 21. Post-Training & Alignment
 
 !!! abstract "In this chapter"

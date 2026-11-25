@@ -1,3 +1,8 @@
+---
+seo_title: "Information Theory: Entropy, Cross-Entropy & KL"
+description: "Why information is -log p, entropy, the source-coding theorem (compression = prediction), cross-entropy, KL divergence, perplexity, bits-per-byte and the KL estimators used in RLHF."
+---
+
 # 4. Information Theory
 
 !!! abstract "In this chapter"

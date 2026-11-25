@@ -1,3 +1,8 @@
+---
+seo_title: "Scaling Laws: Kaplan, Chinchilla & Compute-Optimal LLMs"
+description: "Power laws on log-log plots, Kaplan scaling laws, the Chinchilla compute-optimal derivation, the replication controversy, inference-aware overtraining, repeated data and emergence."
+---
+
 # 17. Scaling Laws
 
 !!! abstract "In this chapter"

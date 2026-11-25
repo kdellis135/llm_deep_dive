@@ -1,3 +1,8 @@
+---
+seo_title: "The Transformer Block: SwiGLU, Norms & Parameter Count"
+description: "Anatomy of a pre-norm decoder block, the feed-forward network and SwiGLU, an exact GPT-2 parameter count, block FLOPs and memory, the residual stream and the logit lens."
+---
+
 # 13. The Transformer Block
 
 !!! abstract "In this chapter"

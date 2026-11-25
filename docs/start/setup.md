@@ -1,3 +1,8 @@
+---
+seo_title: "Setup & How to Study LLMs"
+description: "Set up a Python environment that runs every code sample on LLM Deep Dive, learn the repository layout, and adopt a study method that turns reading into understanding."
+---
+
 # Setup & How to Study
 
 !!! abstract "In this page"

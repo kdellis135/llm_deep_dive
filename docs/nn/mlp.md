@@ -1,3 +1,8 @@
+---
+seo_title: "Neurons & Multilayer Perceptrons (MLPs)"
+description: "The artificial neuron, every activation function used in LLMs (ReLU, GELU, SiLU) and its derivative, MLP shapes and parameter counts, and a proof of universal approximation."
+---
+
 # 6. Neurons & MLPs
 
 !!! abstract "In this chapter"

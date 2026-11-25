@@ -1,3 +1,8 @@
+---
+seo_title: "Prompt & Context Engineering for LLMs"
+description: "What a prompt does mechanically, in-context learning as Bayesian inference, principles that reliably improve outputs, long-context placement, context engineering and prompt injection."
+---
+
 # 25. Prompt & Context Engineering
 
 !!! abstract "In this chapter"

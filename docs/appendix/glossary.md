@@ -1,3 +1,8 @@
+---
+seo_title: "LLM & Deep Learning Glossary"
+description: "Clear, consistent definitions of LLM and deep learning terms from activation to weight decay, each linked to the chapter that explains it in depth."
+---
+
 # Glossary
 
 !!! abstract "How to use this page"

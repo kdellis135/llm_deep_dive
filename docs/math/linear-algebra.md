@@ -1,3 +1,8 @@
+---
+seo_title: "Linear Algebra for Machine Learning & LLMs"
+description: "Linear algebra from scratch for deep learning: vectors, dot products, matrix multiplication, rank, eigenvalues, the SVD, projections, einsum and high-dimensional geometry."
+---
+
 # 1. Linear Algebra
 
 !!! abstract "In this chapter"

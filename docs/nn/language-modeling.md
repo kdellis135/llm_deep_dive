@@ -1,3 +1,8 @@
+---
+seo_title: "Language Modeling Basics: N-grams, RNNs to Attention"
+description: "What a language model is: the autoregressive factorization, n-gram models as MLE, neural bigram and MLP language models, word embeddings, RNNs, LSTMs and the origin of attention."
+---
+
 # 9. Language Modeling Basics
 
 !!! abstract "In this chapter"

@@ -1,3 +1,8 @@
+---
+seo_title: "LLM Pretraining: Data, Deduplication, FLOPs & MFU"
+description: "The end-to-end LLM pretraining pipeline: web data cleaning, MinHash deduplication, quality filtering, data mixtures and annealing, FLOP accounting, MFU, and what goes wrong in real runs."
+---
+
 # 15. Pretraining
 
 !!! abstract "In this chapter"

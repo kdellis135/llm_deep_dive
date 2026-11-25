@@ -1,3 +1,8 @@
+---
+seo_title: "Efficient LLM Inference: KV Cache, FlashAttention, Quantization"
+description: "Prefill vs decode, the KV cache and its memory cost, FlashAttention with a proof of online softmax, continuous batching, PagedAttention, prefix caching, and quantization (GPTQ, AWQ)."
+---
+
 # 19. Efficient Inference
 
 !!! abstract "In this chapter"

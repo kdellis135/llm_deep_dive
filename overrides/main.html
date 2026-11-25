@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+
+{#- SEO: per-page <title> from the `seo_title` front-matter key. -#}
+{% block htmltitle %}
+  {%- if page.meta and page.meta.seo_title -%}
+    {%- if page.is_homepage -%}
+      <title>{{ page.meta.seo_title | e }}</title>
+    {%- else -%}
+      <title>{{ page.meta.seo_title | e }} | {{ config.site_name }}</title>
+    {%- endif -%}
+  {%- else -%}
+    {{ super() }}
+  {%- endif -%}
+{% endblock %}
+
+{% block extrahead %}
+  {%- set seo_title = (page.meta.seo_title if page.meta and page.meta.seo_title else (page.title | striptags if page.title else config.site_name)) -%}
+  {%- set seo_desc = (page.meta.description if page.meta and page.meta.description else config.site_description) -%}
+  {%- set seo_image = config.site_url ~ "assets/social-card.png" -%}
+  {%- set seo_url = page.canonical_url or config.site_url -%}
+
+  {%- if config.extra.google_site_verification %}
+  <meta name="google-site-verification" content="{{ config.extra.google_site_verification | e }}">
+  {%- endif %}
+
+  <meta property="og:type" content="{{ 'website' if page.is_homepage else 'article' }}">
+  <meta property="og:site_name" content="{{ config.site_name | e }}">
+  <meta property="og:title" content="{{ seo_title | e }}">
+  <meta property="og:description" content="{{ seo_desc | e }}">
+  <meta property="og:url" content="{{ seo_url | e }}">
+  <meta property="og:image" content="{{ seo_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="LLM Deep Dive: from first principles to frontier LLMs">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ seo_title | e }}">
+  <meta name="twitter:description" content="{{ seo_desc | e }}">
+  <meta name="twitter:image" content="{{ seo_image }}">
+
+  {%- set site_ld = {
+    "@type": "WebSite",
+    "@id": config.site_url ~ "#website",
+    "name": config.site_name,
+    "url": config.site_url,
+    "description": config.site_description,
+    "inLanguage": "en"
+  } %}
+  {%- set author_ld = {"@type": "Person", "name": "kdellis135", "url": "https://github.com/kdellis135"} %}
+  {%- if page.is_homepage %}
+    {%- set ld = {
+      "@context": "https://schema.org",
+      "@graph": [
+        site_ld,
+        {
+          "@type": "LearningResource",
+          "name": seo_title,
+          "description": seo_desc,
+          "url": seo_url,
+          "image": seo_image,
+          "inLanguage": "en",
+          "learningResourceType": "Course",
+          "isAccessibleForFree": true,
+          "license": "https://creativecommons.org/licenses/by/4.0/",
+          "author": author_ld,
+          "isPartOf": {"@id": config.site_url ~ "#website"}
+        }
+      ]
+    } %}
+  {%- else %}
+    {%- set ld = {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": seo_title,
+      "name": page.title | striptags,
+      "description": seo_desc,
+      "url": seo_url,
+      "mainEntityOfPage": seo_url,
+      "image": seo_image,
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "author": author_ld,
+      "isPartOf": site_ld
+    } %}
+  {%- endif %}
+  <script type="application/ld+json">{{ ld | tojson }}</script>
+{% endblock %}

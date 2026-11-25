@@ -1,4 +1,6 @@
 ---
+seo_title: "LLM Deep Dive: Learn Large Language Models from First Principles"
+description: "Learn how large language models work from first principles: the math, step-by-step proofs, tested Python code, and practical guides to RAG, agents and the Claude API."
 hide:
   - navigation
 ---

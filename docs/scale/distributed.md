@@ -1,3 +1,8 @@
+---
+seo_title: "Distributed Training & Mixed Precision for LLMs"
+description: "The memory budget of training, fp32 to fp8 and why bf16 won, mixed precision, the roofline model, ring all-reduce with proof, and data, ZeRO, tensor and pipeline parallelism."
+---
+
 # 16. Distributed Training & Precision
 
 !!! abstract "In this chapter"

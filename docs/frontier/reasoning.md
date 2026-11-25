@@ -1,3 +1,8 @@
+---
+seo_title: "Reasoning Models: Chain-of-Thought, RLVR and GRPO"
+description: "Why chain-of-thought helps, test-time compute scaling, reinforcement learning with verifiable rewards, GRPO derived and implemented, the DeepSeek-R1 recipe, and the pass@k estimator."
+---
+
 # 22. Reasoning Models
 
 !!! abstract "In this chapter"

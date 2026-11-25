@@ -1,3 +1,8 @@
+---
+seo_title: "LLM Evaluation & Production: Evals, LLM-as-Judge, Ops"
+description: "Build LLM evals that work: evaluation sets, graders and LLM-as-judge calibration, the statistics of evals, benchmarks and arenas, observability, cost and latency, and a launch checklist."
+---
+
 # 29. Evaluation & Production
 
 !!! abstract "In this chapter"
